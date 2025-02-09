@@ -1,0 +1,117 @@
+.main-container{
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 50%;
+    margin: auto;
+    border-radius: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+    animation: rubberBand 0.8s ease-in-out;
+}
+
+.profile-box-container{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 50px 50px;
+    box-shadow: 20px 10px 10px 2px #0d031a;
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+}
+
+.image-css{
+    box-shadow: 10px 8px 8px 2px #242425;
+    border-radius: 20px 20px;
+}
+
+.info-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    gap: 30px;
+    font-size: 30px;
+}
+
+
+@media(max-width : 998px ){
+    .info-container{
+        font-size: 1.3rem;
+    }
+    /* .image-container{
+        height: 60%;
+        width: 60%;
+    } */
+}
+
+@media(max-width : 826px){
+    .profile-box-container{
+        padding: 20px;
+    }
+   
+}
+
+ @media(max-width : 686px){
+    .profile-box-container{
+        padding: 15px;
+    }
+
+    .info-container{
+        font-size: 1rem;
+    }
+     .image-container{
+        height: 80%;
+      
+    } 
+ } 
+
+
+@media(max-width : 498px){
+    .profile-box-container{
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .info-container{
+        font-size: 1rem;
+        gap: 5px;
+    }
+    .image-container{
+        height: 50%;
+        
+    }
+}
+
+
+@media(max-width : 498px){
+
+    .info-container{
+        font-size: 0.5rem;
+        gap: 5px;
+    }
+    .image-container{
+        height: 40%;
+    }
+}
+
+@keyframes rubberBand {
+    0% { transform: scaleX(1); }
+    30% { transform: scaleX(1.25); }
+    40% { transform: scaleX(0.75); }
+    50% { transform: scaleX(1.15); }
+    65% { transform: scaleX(0.95); }
+    75% { transform: scaleX(1.05); }
+    100% { transform: scaleX(1); }
+  }
+  
+
